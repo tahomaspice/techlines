@@ -1,0 +1,32 @@
+{
+  "name": "techlines",
+  "version": "1.0.0",
+  "description": "TSC Backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "server": "node server/index.js",
+    "app": "concurrently npm \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahomaspice/techlines.git"
+  },
+  "author": "Stephen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahomaspice/techlines/issues"
+  },
+  "homepage": "https://github.com/tahomaspice/techlines#readme",
+  "dependencies": {
+    "axios": "^1.3.3",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.1"
+  }
+}
