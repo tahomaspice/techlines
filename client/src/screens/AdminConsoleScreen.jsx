@@ -2,6 +2,7 @@ import { Box, Stack, Heading, Tab, Tabs, TabList, TabPanels, TabPanel } from '@c
 import { Navigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import UsersTab from '../components/UsersTab';
+import OrdersTab from '../components/OrdersTab';
 
 
 
@@ -27,6 +28,9 @@ const AdminConsoleScreen = () => {
                     <TabPanels>
                         <TabPanel>
                             <UsersTab />
+                        </TabPanel>
+                        <TabPanel>
+                            <OrdersTab />
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
