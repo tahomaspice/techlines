@@ -86,7 +86,7 @@ const addItem = (id) => {
                 <Box as='span' color={'gray.600'} fontSize='lg'>
                     $
                 </Box>
-                {Number(product.price.toFixed(2))}
+                {Number(product.price).toFixed(2)}
             </Box>
             <Tooltip label='Add to Cart' bg='white' placement={'top'} color={'gray.800'} fontSize={'1.2em'}>
                 <Button variant='ghost' display={'flex'} isDisabled={product.stock <= 0} onClick={() => addItem(product._id)}>

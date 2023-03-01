@@ -16,16 +16,16 @@ import { Link as ReactLink } from 'react-router-dom';
 import { GiTechnoHeart } from 'react-icons/gi';
 
 export const LandingScreen = () => (
-  <Box maxW="8xl" mx="auto" px={{ base: '0', lg: '12' }} py={{ base: '0', lg: '12' }} minH='6xl'>
-    <Stack direction={{ base: 'column-reverse', lg: 'row' }} spacing={{ base: '0', lg: '20' }}>
+  <Box maxW="8xl" mx="auto" px={{ base: '0', lg: '12' }} py={{ base: '5', lg: '12' }} minH='2xl'>
+    <Stack direction={{ base: 'column-reverse', lg: 'row' }} spacing={{ base: '10', lg: '20' }}>
       <Box
         width={{ lg: 'sm' }}
         transform={{ base: 'translateY(-50%)', lg: 'none' }}
         bg={{ base: useColorModeValue('red.50', 'gray.700'), lg: 'transparent' }}
         mx={{ base: '6', md: '8', lg: '0' }}
-        px={{ base: '6', md: '8', lg: '0' }}
-        py={{ base: '6', md: '8', lg: '12' }} >
-        <Stack spacing={{ base: '8', lg: '10' }}>
+        px={{ base: '8', md: '6', lg: '0' }}
+        py={{ base: '6', md: '6', lg: '12' }} >
+        <Stack spacing={{ base: '4', lg: '10' }}>
           <Stack spacing={{ base: '2', lg: '4' }}>
             <Flex alignItems='center'>
                 <Icon as={GiTechnoHeart} h={12} w={12} color={useColorModeValue('orange.500', 'orange.300')} />

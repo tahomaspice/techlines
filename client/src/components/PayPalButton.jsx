@@ -21,8 +21,8 @@ const PayPalButton = ({total, onPaymentSuccess, onPaymentError, disabled}) => {
                 }}
                 onApprove={(data, actions) => {
                     return actions.order.capture().then((details) => {
-                        //onPaymentSuccess(data);
-                        onPaymentError();
+                        onPaymentSuccess(data);
+                        
                     });
                 }}
                 onError={(err) => {

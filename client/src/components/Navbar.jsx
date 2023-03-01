@@ -20,7 +20,11 @@ const ShoppingCartIcon = () => {
             </Text>
             <Icon ml='-1.5' as={FiShoppingCart} h='4' w='7' alignSelf='center' />
             Cart
+            
         </Flex>
+
+        
+
     );
 };
 
@@ -28,6 +32,11 @@ const ShoppingCartIcon = () => {
 
 const links = [
     { linkName: 'Products', path: '/products'},
+    { linkName: 'Hot Sauce', path: '/products'},
+    { linkName: 'BBQ Sauce', path: '/products'},
+    { linkName: 'Salsa', path: '/products'},
+    { linkName: 'Gifts', path: '/products'},
+    { linkName: 'Blog', path: '/products'},
     { linkName: <ShoppingCartIcon />, path: '/cart'},
 ];
 const NavLink = ({ path, children }) => (

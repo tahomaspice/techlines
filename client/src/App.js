@@ -12,6 +12,7 @@ import ProfileScreen from './screens/ProfileScreen';
 import CheckoutScreen from './screens/CheckoutScreen';
 import YourOrdersScreen from './screens/YourOrdersScreen';
 import AdminConsoleScreen from './screens/AdminConsoleScreen';
+import BbqSauceScreen from './screens/BbqSauceScreen';
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
               <Route path='/checkout' element={<CheckoutScreen />}></Route>
               <Route path='/your-orders' element={<YourOrdersScreen />}></Route>
               <Route path='/admin-console' element={<AdminConsoleScreen />}></Route>
+              {/* mine */}
+              <Route path='/products' element={<BbqSauceScreen />}></Route>
            
             </Routes>
           </main>

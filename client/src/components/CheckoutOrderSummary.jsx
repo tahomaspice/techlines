@@ -113,7 +113,11 @@ const CheckoutOrderSummary = () => {
             </Flex> 
         </Stack>
 
-        <PayPalButton total={total} onPaymentSuccess={onPaymentSuccess} onPaymentError={onPaymentError} disabled={buttonDisabled} />
+        <PayPalButton 
+            total={total} 
+            onPaymentSuccess={onPaymentSuccess} 
+            onPaymentError={onPaymentError} 
+            disabled={buttonDisabled} />
 
         <Box align='center'>
             <Text fontSize='sm'>Have questions or need help with your order?</Text>
