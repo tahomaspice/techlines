@@ -13,6 +13,7 @@ import CheckoutScreen from './screens/CheckoutScreen';
 import YourOrdersScreen from './screens/YourOrdersScreen';
 import AdminConsoleScreen from './screens/AdminConsoleScreen';
 import BbqSauceScreen from './screens/BbqSauceScreen';
+import OrderSuccessScreen from './screens/OrderSuccessScreen';
 
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
               <Route path='/checkout' element={<CheckoutScreen />}></Route>
               <Route path='/your-orders' element={<YourOrdersScreen />}></Route>
               <Route path='/admin-console' element={<AdminConsoleScreen />}></Route>
+              <Route path='/order-success' element={<OrderSuccessScreen />}></Route>
+
               {/* mine */}
               <Route path='/products' element={<BbqSauceScreen />}></Route>
            
