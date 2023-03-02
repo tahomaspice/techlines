@@ -6,7 +6,7 @@
 .pnp.js
 node_modules/
 # testing
-/client/public/images
+
 /coverage
 /client/src/client_id.js
 .env
