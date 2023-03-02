@@ -38,6 +38,25 @@ export const getProduct = (id) => async(dispatch) => {
   }
 };
 
+export const getBBQsauce = (id) => async(dispatch) => {
+    dispatch(setLoading(true));
+    try {
+        const { data } = await axios.get(`/api/products/${id}`);
+        dispatch(setProduct(data));
+    } catch (error) {
+    dispatch(
+        setError(
+            error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message
+            ? error.message
+            : 'An unexpected error has occured. Please try again later.'
+       )
+     );
+  }
+};
+
+
 export const createProductReview = (productId, userId, comment, rating, title) => async (dispatch, getState) => {
   dispatch(setLoading());
     const {

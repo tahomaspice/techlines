@@ -73,14 +73,17 @@ const addItem = (id) => {
         <Flex mt='1' justifyContent='space-between' alignContent='center'>
             <Link as={ReactLink} to={`/product/${product._id}`} pt='2' cursor='pointer'>
                 <Box fontSize='2xl' fontWeight='semibold' lineHeight='tight'>
-                    {product.name}
+                    {product.name} --
+                    {product.category}
                 </Box>
+
+            
             </Link>
         </Flex>
         <Flex justifyContent='space-between' alignContent='center' py='2'>
             <Rating rating={product.rating} numberOfReviews={product.numberOfReviews} />
         </Flex>
-
+        
         <Flex justify='space-between'>
             <Box fontSize='2xl' color={mode('gray.800', 'white')}>
                 <Box as='span' color={'gray.600'} fontSize='lg'>

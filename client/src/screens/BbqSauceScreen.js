@@ -13,8 +13,8 @@ const BbqSauceScreen = () => {
   const { loading, error, products, category } = productList;
 
   useEffect(() => {
-        if (products) {
-            dispatch(getProducts());
+        if (products.category === 'Hot Sauce') {
+            dispatch(getProducts(category));
         }
     }, []);
   
@@ -33,9 +33,9 @@ return (
 
       ) : (
       products.map((product) => (
-        <WrapItem key={product.category} >
+        <WrapItem key={category} >
           <Center w='250px' h='550px'>
-            <ProductCard product={product} />
+            <ProductCard category={'Hot Sauce'} />
           </Center>
         </WrapItem> 
     )))}
