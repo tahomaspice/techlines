@@ -29,12 +29,12 @@ const ShippingInformation = () => {
         initialValues = {{ address1: '', address2: '', city: '', state: '', zipcode: ''}}
         validationSchema={Yup.object({
         address1: Yup.string().required('Required').min(2, 'Too Short'),
-        address2: Yup.string().min(2, 'Too Short'),
+        address2: Yup.string(),
         city: Yup.string().required('Required').min(2, 'Too Short'),
         state: Yup.string().required('Required').min(2, 'Too Short'),
         zipcode: Yup.string().required('Required').min(2, 'Too Short'),
     })}>
-    {(formik) => 
+    {(formik) => (
       <VStack as='form'>
         <FormControl 
          onChange={
@@ -86,7 +86,8 @@ const ShippingInformation = () => {
             </Stack>
             </RadioGroup>
           </Box>
-        </VStack>}
+        </VStack>
+        )}
     </Formik>
   );
 };
