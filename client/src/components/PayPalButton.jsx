@@ -15,13 +15,13 @@ const PayPalButton = ({total, onPaymentSuccess, onPaymentError, disabled}) => {
         paypalkey();
     }, [paypalClient]);
 
-    return 
-        !paypalClient ? (
+    return !paypalClient ? (
+        
             <Stack direction='row' spacing={4} alignSelf='center'>
             <Spinner mt={20} thickness='2px' speed='0.65s' emptyColor='gray.200' color='orange.500' size='xl' />
         </Stack>
         ) : (
-        <PayPalScriptProvider options={{ 'client-id': paypalClient, }}>
+        <PayPalScriptProvider options={{ 'client-id': paypalClient }}>
             <PayPalButtons
             disabled={disabled}
             forceReRender={[total(), paypalClient]}
