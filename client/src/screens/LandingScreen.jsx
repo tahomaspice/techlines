@@ -48,7 +48,7 @@ export const LandingScreen = () => (
       </Box>
       <Flex flex="1" overflow="hidden">
         <Image
-          src='../images/HEROProducts.jpg' alt="Lovely Image"
+          src='../images/HEROProducts.jpg' 
           fallback={<Skeleton />}
           maxH="550px"
           minW="300px"
