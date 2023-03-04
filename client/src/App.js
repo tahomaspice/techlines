@@ -12,7 +12,6 @@ import ProfileScreen from './screens/ProfileScreen';
 import CheckoutScreen from './screens/CheckoutScreen';
 import YourOrdersScreen from './screens/YourOrdersScreen';
 import AdminConsoleScreen from './screens/AdminConsoleScreen';
-import BbqSauceScreen from './screens/BbqSauceScreen';
 import OrderSuccessScreen from './screens/OrderSuccessScreen';
 
 
@@ -26,6 +25,7 @@ function App() {
               <Route path='/' element={<LandingScreen />}></Route>
               <Route path='/products' element={<ProductsScreen />}></Route>
               <Route path='/product/:id' element={<ProductScreen />}></Route>
+              <Route path='/products/:category' element={<ProductsScreen />}></Route>
               <Route path='/cart' element={<CartScreen />}></Route>
               <Route path='/login' element={<LoginScreen />}></Route>
               <Route path='/registration' element={<RegistrationScreen />}></Route>
@@ -34,10 +34,9 @@ function App() {
               <Route path='/your-orders' element={<YourOrdersScreen />}></Route>
               <Route path='/admin-console' element={<AdminConsoleScreen />}></Route>
               <Route path='/order-success' element={<OrderSuccessScreen />}></Route>
-
-              {/* mine */}
-              <Route path='/products' element={<BbqSauceScreen />}></Route>
-           
+              
+             
+                                   
             </Routes>
           </main>
           <Footer />

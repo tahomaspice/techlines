@@ -11,9 +11,10 @@ const ProductsScreen = () => {
 
   const productList = useSelector((state) => state.products);
   const { loading, error, products } = productList;
-
+  
   useEffect(() => {
     dispatch(getProducts());
+    
   }, [dispatch]);
 
   return (
@@ -31,8 +32,10 @@ const ProductsScreen = () => {
 
       ) : (
       products.map((product) => (
+        
         <WrapItem key={product._id} >
           <Center w='250px' h='550px'>
+            
             <ProductCard product={product} />
           </Center>
         </WrapItem> 
@@ -40,6 +43,7 @@ const ProductsScreen = () => {
     </Wrap>
 
   );
+
 };
 
 export default ProductsScreen;
